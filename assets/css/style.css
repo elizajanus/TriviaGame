@@ -1,0 +1,52 @@
+body {
+    background: url("../images/twinpeaks.jpg");
+    background-size: cover;
+    
+}
+#triviapanel {
+    height: 1000px;
+    width: 900px;
+    background: white;
+    opacity: .75;
+    position: relative;
+    left: 115px;
+
+}
+body {
+font-family: 'Roboto Condensed', sans-serif;
+}
+#title {
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+#submit {
+    position: relative;
+    left: 425px;
+    background: red;
+    opacity: .75;
+}
+#start {
+    position: relative;
+    left: 500px;
+    top: 300px;
+    background: red;
+    opacity: .75;
+  
+}
+
+#endpanel {
+    height: 1000px;
+    width: 900px;
+    background: white;
+    opacity: .75;
+    position: relative;
+    left: 115px;
+}

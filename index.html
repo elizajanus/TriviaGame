@@ -11,9 +11,92 @@
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+
     <title>Trivia Game</title>
 </head>
 <body>
-    
+  <div id="startpage" class="container">
+      <a id="start" class="btn btn-default btn-lg" href="#" role="button">Start</a>
+  </div>
+
+    <div id="maincontent" class="container" style="display: none;">
+      <div id="triviapanel" class="panel">
+        <h1 id="title">Twin Peaks Trivia</h1>
+        <h2 id="countdown"></h2><br>
+        
+        <p id="question1">Question 1</p>
+        <form id="q1" action="">
+          <input type="radio" name="answer" value="option1"> Option1  
+          <input type="radio" name="answer" value="option2"> Option2  
+          <input type="radio" name="answer" value="option3" data-correct> Option3  
+          <input type="radio" name="answer" value="option4"> Option4 
+        </form><br><br>
+        <p id="question2">Question 2</p>
+        <form id="q2" action="">
+          <input type="radio" name="answer" value="option1"> Option1  
+          <input type="radio" name="answer" value="option2" data-correct> Option2  
+          <input type="radio" name="answer" value="option3"> Option3  
+          <input type="radio" name="answer" value="option4"> Option4 
+        </form><br><br>
+        <p id="question3">Question 3</p>
+        <form id="q3" action="">
+          <input type="radio" name="answer" value="option1"> Option1  
+          <input type="radio" name="answer" value="option2"> Option2  
+          <input type="radio" name="answer" value="option3"> Option3  
+          <input type="radio" name="answer" value="option4" data-correct> Option4 
+        </form>
+        <br><br>
+        <p id="question4">Question 4</p>
+        <form id="q4" action="">
+          <input type="radio" name="answer" value="option1"> Option1  
+          <input type="radio" name="answer" value="option2"> Option2  
+          <input type="radio" name="answer" value="option3"> Option3  
+          <input type="radio" name="answer" value="option4" data-correct> Option4 
+        </form>
+        <br><br>
+        <p id="question5">Question 5</p>
+        <form id="q5" action="">
+          <input type="radio" name="answer" value="option1" data-correct> Option1  
+          <input type="radio" name="answer" value="option2"> Option2  
+          <input type="radio" name="answer" value="option3"> Option3  
+          <input type="radio" name="answer" value="option4"> Option4 
+        </form>
+        <br><br>
+        <p id="question6">Question 6</p>
+        <form id="q6" action="">
+          <input type="radio" name="answer" value="option1"> Option1  
+          <input type="radio" name="answer" value="option2" data-correct> Option2  
+          <input type="radio" name="answer" value="option3"> Option3  
+          <input type="radio" name="answer" value="option4"> Option4 
+        </form>
+        <br><br>
+        <p id="question7">Question 7</p>
+        <form id="q7" action="">
+          <input type="radio" name="answer" value="option1"> Option1  
+          <input type="radio" name="answer" value="option2"> Option2  
+          <input type="radio" name="answer" value="option3"> Option3  
+          <input type="radio" name="answer" value="option4" data-correct> Option4 
+        </form>
+        <br><br>
+        <p id="question8">Question 8</p>
+        <form id="q8" action="">
+          <input type="radio" name="answer" value="option1" data-correct> Option1  
+          <input type="radio" name="answer" value="option2"> Option2  
+          <input type="radio" name="answer" value="option3"> Option3  
+          <input type="radio" name="answer" value="option4"> Option4 
+        </form><br><br>
+        <a id="submit" class="btn btn-default" href="#" role="button">Done</a>
+        
+      </div>
+    </div>
+
+    <div id="endpage" class="container" style="display: none;">
+      <div id="endpanel" class="panel">
+        <p id="correct"></p><br>
+        <p id="incorrect"></p><br>
+        <p id="unanswered"></p>
+      </div>
+    </div>
 </body>
 </html>
