@@ -23,17 +23,29 @@ $('#start').on('click',function(){
       }
     }
 
-    var correct;
-    var incorrect;
-    var unanswered;
+    var correct = 0;
+    var incorrect = 0;
+    var unanswered = 0;
     $('#submit').on('click',function(){ 
         $('#endpage').html($('#endpage').html()).show().siblings('div').hide();
-      
+        $("#question").each(function() {
+          var submitted = $('input[name=answer]:checked').val();
+          if (submitted == "correct") {
+            correct++;
+            console.log(correct);
+          } else if (submitted == "incorrect") {
+              incorrect++;
+              console.log(incorrect);
+            } else {
+              unanswered++;
+              console.log(unanswered);
+            }
+          });
+        
     });
-
+  });
 
 
 
 
     });
-});
