@@ -50,3 +50,8 @@ h2 {
     position: relative;
     left: 115px;
 }
+#results {
+    position: relative;
+    top: 300px;
+    font-size: 30px;
+}

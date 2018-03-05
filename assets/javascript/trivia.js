@@ -40,6 +40,9 @@ $('#start').on('click',function(){
               unanswered++;
               console.log(unanswered);
             }
+            $("#correct").text("Correct: " + correct);
+            $("#incorrect").text("Incorrect: " + incorrect);
+            $("#unanswered").text("Unanswered: " + unanswered);
           });
         
     });
