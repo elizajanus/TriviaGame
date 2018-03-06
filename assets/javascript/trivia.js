@@ -7,19 +7,35 @@ $('#start').on('click',function(){
         $('#maincontent').html($('#maincontent').html()).show().siblings('div').hide();
     } else if($('#maincontent').css('display')!='none') {
    $('#startpage').show().siblings('div').hide();
-    }
+    };
     countdown();
     var number = 30;
     var intervalId;
     function countdown() {
       clearInterval(intervalId);
-      intervalId = setInterval(decrement, 30000);
+      intervalId = setInterval(decrement, 1000);
     }
     function decrement() {
       number--;
       $("#countdown").html("<h2> Time Remaining: " + number + "</h2>");
       if (number === 0) {
         $('#endpage').html($('#endpage').html()).show().siblings('div').hide();
+        $("#question").each(function() {
+          var submitted = $('input[name=answer]:checked').val();
+          if (submitted == "correct") {
+            correct++;
+            console.log(correct);
+          } else if (submitted == "incorrect") {
+              incorrect++;
+              console.log(incorrect);
+            } else if (submitted == undefined){
+              unanswered++;
+              console.log(unanswered);
+            }
+            $("#correct").text("Correct: " + correct);
+            $("#incorrect").text("Incorrect: " + incorrect);
+            $("#unanswered").text("Unanswered: " + unanswered);
+          });
       }
     }
 
@@ -36,7 +52,7 @@ $('#start').on('click',function(){
           } else if (submitted == "incorrect") {
               incorrect++;
               console.log(incorrect);
-            } else {
+            } else if (submitted == undefined){
               unanswered++;
               console.log(unanswered);
             }
